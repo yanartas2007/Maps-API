@@ -43,7 +43,7 @@ def main():
         if event.type == pygame.QUIT:
             break
         map_file = load(map)
-        screen.blit(pygame.image, load(map_file), (0, 0))
+        screen.blit(pygame.image.load(map_file), (0, 0))
         pygame.display.flip()
     pygame.quit()
     os.remove(map_file)
